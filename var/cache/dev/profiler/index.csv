@@ -1,6 +1,0 @@
-024222,::1,GET,https://localhost:8000/,1642769720,,404
-5e68bf,::1,GET,https://localhost:8000/favicon.ico,1642769720,a62151,404
-a62151,::1,GET,https://localhost:8000/favicon.ico,1642769721,,404
-53df0a,::1,GET,https://localhost:8000/,1642770665,,404
-5f0f30,::1,GET,https://localhost:8000/home,1642770670,,200
-178d18,::1,GET,https://localhost:8000/home,1642770724,,200
