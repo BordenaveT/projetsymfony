@@ -1,3 +1,12 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+
+portfolio:
+    path: /portfolio
+    controller: App\Controller\PortfolioController::index
+
+connexion:
+    path: /connexion
+    controller: App\Controller\ConnexionController::index
