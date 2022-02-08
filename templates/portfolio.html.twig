@@ -1,36 +1,34 @@
-{% block body %}
-<html lang="fr">
-
-<head>
+{% block header %}
+<html>
+	<head>
     <meta charset="UTF-8" />
-
-    <link rel="stylesheet" type="text/css" href="assets/styles/portfolio.scss" />
+    {% block stylesheets %}
+        <link rel="stylesheet" type="text/scss" href="{{asset('styles/portfolio.scss')}}">
+    {% endblock %} 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
     <meta name="format-detection" content="telephone=no">
-    <!-- Title -->
+    {% block title %}
     <title>Stage BTS SIO - SLAM</title>
+    {% endblock %}
     <div class="header">
         <div class="inner_header">
             <div class="logo_container">
-                <h1><a href="index.html">The<span>Suspectdg</span></a></h1>
+                <h1><a href="index">The<span>Suspectdg</span></a></h1>
             </div>
-
             <ul class="navigation">
                 <a href="apropos"><li>À propos</li></a>
                 <a href="portfolio"><li>Portfolio</li></a>
                 <a href="contact"><li>Contact</li></a>
                 <a href="connexion"><li>Connexion</li></a>
             </ul>
-
         </div>
-
-
     </div>
-</head>
-
-<body>
+    </head>
+{% endblock %} 
+    
+{% block body %}
+    <body>
     <div class="portfoliopf"><h1>Portfolio</h1></div>
-
     <div class="grille">
         <div class="grid-item3">
         </div>
@@ -43,7 +41,6 @@
         <div class="grid-item7">
         </div>
     </div>
-
     <div class="grille2">
         <div class="grid-item4-2">
         </div>
@@ -59,43 +56,28 @@
         <a class="text">1 / 2 / 3 / ... / 9</a>
         <a class="next" onclick="plusImage(1)">❯</a>
     </div>
-</body>
+    </body>
+{% endblock %}
 
-<footer>
+{% block footer %}
+    <footer>
     <div class="grille-footer">
         <div class="grid-item-footer-1">
-            <a href="contact.html"><h3>Contact</h3></a>
-
+            <a href="contact"><h3>Contact</h3></a>
         </div>
-
         <div class="grid-item-footer-2">
-            <a href="#"><img src="./assets/facebookwhite.png" width=30 height=30> </img></a>
+            <a href="#"><img src="./assets/img/logo-facebook.svg" width=30 height=30> </img></a>
         </div>
-
         <div class="grid-item-footer-3">
-            <a href="#"><img src="./assets/twitterwhite.png" width=30 height=30> </img></a>
+            <a href="#"><img src="./assets/img/logo-twitter.svg" width=30 height=30> </img></a>
         </div>
-
         <div class="grid-item-footer-4">
-
-            <a href="#"><img src="./assets/instagramwhite.png" width=30 height=30> </img></a>
-
-
+            <a href="#"><img src="./assets/img/logo-instagram.svg" width=30 height=30> </img></a>
         </div>
-
         <div class="grid-item-footer-5">
-
             <h3>@2021 | TheSuspectdg </br> Made by CPONS</h3>
-
         </div>
-
-
     </div>
-
-
-</footer>
-<!-- JavaScript -->
-<script src="js/index.js"></script>
-
+    </footer>
 </html>
-{% endblock %}
+{% endblock %} 
