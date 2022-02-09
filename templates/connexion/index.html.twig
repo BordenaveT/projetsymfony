@@ -1,0 +1,18 @@
+{% extends 'home/base.html.twig'%}
+
+{% block title %}Connexion
+{% endblock %}
+
+{% block body %}
+
+	<div class="grille4">
+        <h2>Connexion à votre espace</h2>
+        <div class="form-email"><input type="email" id="email" name="email" required minlength="20" maxlength="50" placeholder="Email"></div>
+        <div class="form-mdp"><input type="password" id="mdp" name="mdp" required minlength="12" maxlength="25" placeholder="Mot de passe"></div>
+        <div class="container">
+            <a href="#"><button class="btn1">Envoyer</button></a>
+            <a href="#"><button class="btn2">Créer un compte</button></a>
+            <div class="text" href="#">Mot de passe oublié ?</div>
+        </div>
+    </div>
+{% endblock %}
