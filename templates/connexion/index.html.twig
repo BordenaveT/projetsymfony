@@ -4,15 +4,72 @@
 {% endblock %}
 
 {% block body %}
+<!-- CONTENT -->
+	<section>
+		<div class="container d-flex flex-column">
+			<div class="row align-items-center justify-content-center gx-0 min-vh-100">
+				<div
+					class="col-12 col-md-6 col-lg-4 py-8 py-md-11">
 
-	<div class="grille4">
-        <h2>Connexion à votre espace</h2>
-        <div class="form-email"><input type="email" id="email" name="email" required minlength="20" maxlength="50" placeholder="Email"></div>
-        <div class="form-mdp"><input type="password" id="mdp" name="mdp" required minlength="12" maxlength="25" placeholder="Mot de passe"></div>
-        <div class="container">
-            <a href="#"><button class="btn1">Envoyer</button></a>
-            <a href="#"><button class="btn2">Créer un compte</button></a>
-            <div class="text" href="#">Mot de passe oublié ?</div>
-        </div>
-    </div>
+					<!-- Heading -->
+					<h1 class="mb-0 fw-bold">
+						Sign up
+					</h1>
+
+					<!-- Text -->
+					<p class="mb-6 text-muted">
+						Simplify your workflow in minutes.
+					</p>
+
+					<!-- Form -->
+					<form
+						class="mb-6">
+
+						<!-- Email -->
+						<div class="form-group">
+							<label class="form-label" for="email">
+								Email Address
+							</label>
+							<input type="email" class="form-control" id="email" placeholder="name@address.com">
+						</div>
+
+						<!-- Password -->
+						<div class="form-group mb-5">
+							<label class="form-label" for="password">
+								Password
+							</label>
+							<input type="password" class="form-control" id="password" placeholder="Enter your password">
+						</div>
+
+						<!-- Submit -->
+						<button class="btn w-100 btn-primary" type="submit">
+							Sign up
+						</button>
+
+					</form>
+
+					<!-- Text -->
+					<p class="mb-0 fs-sm text-muted">
+						Already have an account?
+						<a href="signin-cover.html">Log in</a>.
+					</p>
+
+				</div>
+				<div
+					class="col-lg-7 offset-lg-1 align-self-stretch d-none d-lg-block">
+
+					<!-- Image -->
+					<div class="h-100 w-cover bg-cover" style="background-image: url(https://picsum.photos/2000/3000);"></div>
+
+					<!-- Shape -->
+					<div class="shape shape-start shape-fluid-y text-white">
+						<svg viewbox="0 0 100 1544" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h100v386l-50 772v386H0V0z" fill="currentColor"/></svg>
+					</div>
+
+				</div>
+			</div>
+			<!-- / .row -->
+		</div>
+		<!-- / .container -->
+	</section>
 {% endblock %}
